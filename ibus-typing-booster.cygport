@@ -1,0 +1,15 @@
+inherit python3
+
+NAME="ibus-typing-booster"
+VERSION=1.5.25
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="IBus typing completion engine"
+DESCRIPTION="Ibus-typing-booster is a completion input method to speedup typing."
+HOMEPAGE="https://mike-fabian.github.io/ibus-typing-booster/"
+SRC_URI="https://github.com/mike-fabian/${NAME}/archive/${VERSION}/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="1.5.24-cygwin-ctypes.patch"
+
+ARCH=noarch
+
+REQUIRES="girepository-Gtk3.0 girepository-IBus1.0 ibus libm17n0 python3-enchant symbola-fonts" # ctypes
